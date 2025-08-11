@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+background-image: url('https://www.freethink.com/wp-content/uploads/2023/12/language-translation.gif?quality=75&w=640');
+    height: 100vh;
+}
+
+.container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+
+    width: 900px;
+    height: 300px;
+    display: flex;
+    gap: 60px;
+}
+
+h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+
+button {
+    background: linear-gradient(to right, #3b82f6, #06b6d4);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+
+    
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+.inp1{width: 70%;
+height: 70%; border: none;}
+.box{display: flex; width: 400px; background-color: white; height: 200px; border-radius: 10px;}
+.box2{display: flex; width: 400px; background-color: white; height: 200px; border-radius: 10px;}
+.button1{width: 20%;
+height: 20%;
+margin-top: 150px; margin-left: 100px;}
+.button{width: 20%;
+height: 20%;
+margin-top: 150px; margin-left: 100px;}
+input{border: none  ;width: 70%;
+height: 70%; border: none;}
+.btn1{margin-left: 300px;}
+select {
+  width: 90%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(45deg, #3b82f6, #9333ea);
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  appearance: none; /* default o‘qchani olib tashlaydi */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+select:hover {
+  background: linear-gradient(45deg, #2563eb, #7e22ce);
+  transform: scale(1.02);
+}
+
+select:focus {
+  outline: none;
+  background: linear-gradient(45deg, #1d4ed8, #6d28d9);
+  box-shadow: 0 0 10px rgba(147,51,234,0.7);
+}
+
+/* Option ranglari */
+option {
+  background-color: #1f2937;
+  color: white;
+}
+main{ background: linear-gradient(to right, #ec4899, #8b5cf6);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 1000px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    margin-left: 500px;
+    margin-top: 200px;}
+   .div4{width: 100px;
+   height: 100px;}
+   main {
+    background: linear-gradient(to right, #ec4899, #8b5cf6);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 1000px;
+    height: 400px;
+    display: flex;
+    flex-direction: column; /* qo‘shildi */
+    align-items: center;
+    justify-content: space-between; /* yuqoridagi elementlar va pastdagi button orasiga joy beradi */
+    margin-left: 500px;
+    margin-top: 200px;
+}
+
+.btn1 {
+    margin: 0; /* kerakmas margin olib tashlandi */
+}
+
+</style>
+<body>
+     <header><h2 style="text-align: center;">Translate App</h2></header>
+   <main>
+ 
+    <div class="container">
+        
+  <div class="Translate">   <div class="box"><input type="text" placeholder="wirte" class="inp1"> 
+    <button class="button" style="width: 100px; height: 50px;"><img src="https://www.drzimmerman.com/wp-content/uploads/2016/08/Listening-Icon-Image-1400x800.png" alt=" listen" style="width: 100%; height: 100%;"></button></div> <br> <br>
+
+    <select id="language">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+            <option value="uz">Uzbek</option>
+        </select> 
+          
+  
+</div> 
+    
+  <div class="div2"><div class="box2"><input type="text" class="inp2" placeholder="Ruslt">
+     <button class="button1" style="width: 100px; height: 50px;"><img src="https://www.drzimmerman.com/wp-content/uploads/2016/08/Listening-Icon-Image-1400x800.png" alt=" listen" style="width: 100%; height: 100%;"></button></div> <br> <br>
+        <select id="language2">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+            <option value="uz">Uzbek</option>
+        </select>
+        <br>
+     
+        </div>
+        
+    </div>
+ <button class="btn1">Tarjima qilish</button></main>
+    <script src="./script.js"></script>
+</body>
+
+    
+
+</html>
